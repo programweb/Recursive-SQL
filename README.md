@@ -6,7 +6,7 @@ mysql_mariadb-path-to-parent.sql
 SQL code I developed for a scientist/researcher at the University of Washington to get all the ancestors (geographic location hierarchy for human disease data) 
 
 
-Here is recursive sample SQL for PostgreSQL that I made:
+Here is recursive sample **SQL for PostgreSQL** that I made on a job in 2015:
 
 ```sql
 with recursive loopedInserts as (
