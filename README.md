@@ -8,6 +8,7 @@ SQL code I developed for a scientist/researcher at the University of Washington 
 
 Here is recursive sample SQL for PostgreSQL that I made:
 
+```sql
 with recursive loopedInserts as (
     INSERT INTO "configuration"(parameter, value)
     VALUES
@@ -21,3 +22,4 @@ INSERT INTO facilities_configuration(facilities_id, configuration_id, value)
     FROM facilities f 
     CROSS JOIN (SELECT id FROM loopedInserts) c
     LEFT JOIN loopedInserts v ON c.id = v.id
+```
