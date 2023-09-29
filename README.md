@@ -13,8 +13,8 @@ with recursive loopedInserts as (
     INSERT INTO "configuration"(parameter, value)
     VALUES
     	('xml_archive_dir_base', '/srv/dc/mirth/live/adt/archive'),
-	    ('xml_error_dir_base', '/srv/dc/mirth/live/adt/error'),
-	    ('xml_output_location', '/srv/dc/mirth/live/adt/out')
+	('xml_error_dir_base', '/srv/dc/mirth/live/adt/error'),
+        ('xml_output_location', '/srv/dc/mirth/live/adt/out')
     RETURNING id, value
 )
 INSERT INTO facilities_configuration(facilities_id, configuration_id, value)
